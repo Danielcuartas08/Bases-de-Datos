@@ -1,0 +1,85 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fondo y tipografía global */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+/* Input de ID */
+#productId {
+    width: 300px;
+    max-width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.2s;
+}
+#productId:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+/* Botón de búsqueda */
+button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+button:hover {
+    background-color: #0056b3;
+}
+button:active {
+    transform: scale(0.98);
+}
+
+/* Contenedor de información del producto */
+#productInfo {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Estilos cuando no hay datos */
+#productInfo.empty {
+    color: #666;
+    text-align: center;
+}
+
+/* Ejemplo de estilo para campos dentro de productInfo */
+#productInfo h2 {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    color: #007bff;
+}
+#productInfo p {
+    margin-bottom: 0.5rem;
+}
